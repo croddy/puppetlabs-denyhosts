@@ -13,6 +13,11 @@ class denyhosts::params {
       $lock_file = '/var/run/denyhosts.pid'
       $denyhosthasservice = true
     }
+    'gentoo': {
+      $secure_log = '/var/log/messages'
+      $lock_file = '/var/run/denyhosts.pid'
+      $denyhosthasservice = true
+    }
     'suse': {
       $secure_log = '/var/log/messages'
       $lock_file = '/var/lock/subsys/denyhosts'
